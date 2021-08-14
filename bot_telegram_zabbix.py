@@ -85,8 +85,8 @@ def text_processing(message):
             get_zabbix_img(ups_time)
             bot.send_photo(message.chat.id, photo=open('graph.png', 'rb'), reply_to_message_id=message.message_id)
 
-        elif message.text.lower() == '/battery_notebook' or message.text.lower() == '/battery': #В поем случае zabbix на ноутбуке, я получаю % заряда черезе psutil
-            bot.send_message(message.chat.id, f'Питание присутсвует? - {psutil.sensors_battery().power_plugged}\nЗаряд батареи ноутбука - {round(psutil.sensors_battery().percent, 1)}')
+#        elif message.text.lower() == '/battery_notebook' or message.text.lower() == '/battery': #В поем случае zabbix на ноутбуке, я получаю % заряда черезе psutil, если нужно раскомментируйте
+#            bot.send_message(message.chat.id, f'Питание присутсвует? - {psutil.sensors_battery().power_plugged}\nЗаряд батареи ноутбука - {round(psutil.sensors_battery().percent, 1)}')
 
         elif message.text.lower() == '/get_all': #Общая информация текстом, через Zabbix_api модуль
             try:
