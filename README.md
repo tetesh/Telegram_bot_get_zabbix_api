@@ -10,3 +10,6 @@ And also change the '/ get_all' block using information from the zabbix_api.py f
 RUN:
 
 python3 bot_telegram_zabbix.py
+
+![alt text](https://github.com/tetesh/Telegram_bot_get_zabbix_api/blob/main/photo_2021-08-16_18-13-56.jpg)
+
